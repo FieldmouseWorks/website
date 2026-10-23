@@ -27,4 +27,5 @@ GitHub Pages is off. This repository was `fieldmouseworks.github.io` until
 
 ## License
 
-No license yet: all rights reserved until a `LICENSE` file is added.
+The code (HTML structure, CSS, build files) is MIT; see [LICENSE](LICENSE). The written content,
+the images in `assets/` and the Fieldmouse Works name and logo aren't covered: all rights reserved.
