@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fieldmouse Works — Open tools for closed systems</title>
-<meta name="description" content="Fieldmouse Works builds open-source upgrade paths for old Linux machines and self-hosted software for emergency communications. Open tools for closed systems.">
+<meta name="description" content="Fieldmouse Works builds open-source upgrade paths for old Linux machines, NixOS modules for machines run by AI coding agents, and self-hosted software for emergency communications. Open tools for closed systems.">
 <meta property="og:title" content="Fieldmouse Works">
 <meta property="og:description" content="Open-source upgrade paths for old Linux machines and self-hosted software for emergency communications. Open tools for closed systems.">
 <meta property="og:url" content="https://fieldmouseworks.com/">
@@ -100,6 +100,37 @@
 
     <article class="project">
       <header>
+        <h3><a href="https://github.com/FieldmouseWorks/burrow">burrow</a></h3>
+        <dl class="meta">
+          <div><dt>Language</dt><dd>Nix, Shell</dd></div>
+          <div><dt>License</dt><dd><a href="https://github.com/FieldmouseWorks/burrow/blob/main/LICENSE">MIT</a></dd></div>
+          <div><dt>Status</dt><dd class="status">in daily use</dd></div>
+        </dl>
+      </header>
+      <p>
+        NixOS modules for a machine you run by talking to Claude. The coding
+        agent gets the whole machine with no permission prompts, because
+        nearly everything it can do undoes itself: a ZFS snapshot before
+        anything deletes files, and a dead man's switch that brings the old
+        system back unless a change is confirmed within ten minutes. The few
+        one-way doors, like wiping disks or flashing firmware, still ask.
+      </p>
+      <p>
+        It keeps the machine current unattended, with every update built,
+        VM-tested, health-checked and reverted on failure, and new CVEs
+        turned into agent jobs the same hour. An always-on operator session
+        you talk to from your phone hands project work to per-project
+        sessions, or to a microVM per task with allowlisted egress.
+      </p>
+      <p class="caution">
+        In daily use on one machine; options may still move. Read the
+        <a href="https://github.com/FieldmouseWorks/burrow#readme">README</a>.
+      </p>
+      <a class="repo-link" href="https://github.com/FieldmouseWorks/burrow">FieldmouseWorks/burrow <span aria-hidden="true">↗</span></a>
+    </article>
+
+    <article class="project">
+      <header>
         <h3><a href="https://github.com/FieldmouseWorks/consolebook">Consolebook</a></h3>
         <dl class="meta">
           <div><dt>Language</dt><dd>Rust</dd></div>
@@ -137,8 +168,8 @@
     </article>
 
     <p class="supporting">
-      Fieldmouse Works focuses on Linux infrastructure and
-      emergency-communications software. For Peter's native game
+      Fieldmouse Works focuses on Linux infrastructure, agent-run machines,
+      and emergency-communications software. For Peter's native game
       reconstruction, persistent-world games, and runtime research, visit his
       <a href="https://github.com/TusanHomichi">personal GitHub profile</a>.
     </p>
