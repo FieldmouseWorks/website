@@ -1,0 +1,11 @@
+# Nix build output and direnv's cache of the dev shell.
+/result
+/result-*
+/.direnv
+
+# Editors and OS.
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
