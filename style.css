@@ -245,6 +245,24 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .name blockquote p { margin: 0; }
 
+/* ---------- documents (privacy) ---------- */
+
+.doc {
+  padding: clamp(3rem, 8vh, 6rem) var(--gutter);
+  border-top: 1px solid var(--ink-2);
+}
+.doc h1 {
+  margin: 0 0 1rem;
+  font-family: var(--display);
+  font-weight: 800;
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+.doc h2 { margin: 2.5rem 0 1rem; }
+.doc p { max-width: var(--measure); margin: 0 0 1rem; }
+.doc .updated { font-family: var(--mono); font-size: 0.8125rem; color: var(--ash); }
+
 /* ---------- colophon ---------- */
 
 .colophon {
