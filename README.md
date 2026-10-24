@@ -6,7 +6,14 @@ Source for [fieldmouseworks.com](https://fieldmouseworks.com), the
 Static HTML + CSS, no build step.
 
 - `index.html` / `style.css` — the page
+- `privacy.html` — the privacy policy, served as `/privacy`
 - `assets/` — mark, favicons, Open Graph image (from the logo kit)
+
+## Check it
+
+`nix flake check` validates every page and stylesheet (W3C Nu validator) and
+checks every local link, asset and `#fragment` offline (lychee). CI runs the
+same on every PR. To look at it, `python3 -m http.server` in this folder.
 
 ## Deploy
 
@@ -17,3 +24,8 @@ site.
 
 GitHub Pages is off. This repository was `fieldmouseworks.github.io` until
 2026-10-16, when it was renamed so that Pages could be turned off.
+
+## License
+
+The code (HTML structure, CSS, build files) is MIT; see [LICENSE](LICENSE). The written content,
+the images in `assets/` and the Fieldmouse Works name and logo aren't covered: all rights reserved.
