@@ -230,6 +230,15 @@ img { display: block; max-width: 100%; height: auto; }
   color: var(--ash);
 }
 
+/* ---------- how the work gets done ---------- */
+
+.how {
+  padding: clamp(3rem, 8vh, 6rem) var(--gutter);
+  border-top: 1px solid var(--ink-2);
+}
+.how p { margin: 0 0 1rem; max-width: var(--measure); }
+.how p:last-child { margin-bottom: 0; }
+
 /* ---------- the name ---------- */
 
 .name {
@@ -280,7 +289,7 @@ img { display: block; max-width: 100%; height: auto; }
 @media (max-width: 40rem) {
   .masthead nav { gap: 1rem; }
   .masthead nav a { white-space: nowrap; }
-  .masthead nav a:nth-child(2) { display: none; }
+  .masthead nav .wide-only { display: none; }
   .brand span { font-size: 0.95rem; }
   .hero { grid-template-columns: 1fr; }
   .shaft { right: -10%; width: 40vw; }
