@@ -63,6 +63,48 @@
 
     <article class="project">
       <header>
+        <h3><a href="https://github.com/FieldmouseWorks/consolebook">Consolebook</a></h3>
+        <dl class="meta">
+          <div><dt>Language</dt><dd>Rust</dd></div>
+          <div><dt>License</dt><dd><a href="https://github.com/FieldmouseWorks/consolebook/blob/main/LICENSE">AGPL-3.0-only</a></dd></div>
+          <div><dt>Status</dt><dd class="status">pre-alpha, <a href="https://github.com/FieldmouseWorks/consolebook/releases/latest">v0.3.0</a></dd></div>
+        </dl>
+      </header>
+      <p>
+        Written by a working 911 dispatcher. Self-hosted training-record
+        software for emergency communications centers: versioned programs,
+        Daily Observation Reports, weekly summaries, task signoffs, and
+        trainee histories, with agency-owned data and portable records.
+      </p>
+      <p>
+        Implemented workflows include assignment-scoped access, immutable
+        finalized records, acknowledgments, amendments, retention policies and
+        holds, verifiable record exports, trainee packets, and a complete
+        installation export that carries everything except credentials.
+      </p>
+      <p>
+        Rust and Axum, SQLite, and an embedded SvelteKit interface:
+        <strong>one executable and one data directory per installation</strong>,
+        installed and upgraded with one command. Every upgrade that migrates
+        the database takes a validated backup first. A small center should be
+        able to operate its own system without a collection of external
+        services.
+      </p>
+      <p>
+        To look around, <code>npm run demo</code> serves a throwaway
+        installation filled with an invented agency's records.
+      </p>
+      <p class="caution">
+        Pre-alpha: usable for development and evaluation only. Use invented
+        data, never production or personnel records. Confirmed disposition,
+        deterministic PDFs, and restore drills on real hosts remain on the
+        <a href="https://github.com/FieldmouseWorks/consolebook/blob/main/docs/roadmap.md">roadmap</a>.
+      </p>
+      <a class="repo-link" href="https://github.com/FieldmouseWorks/consolebook">FieldmouseWorks/consolebook <span aria-hidden="true">↗</span></a>
+    </article>
+
+    <article class="project">
+      <header>
         <h3><a href="https://github.com/FieldmouseWorks/wend">wend</a></h3>
         <dl class="meta">
           <div><dt>Language</dt><dd>Python, Rust</dd></div>
@@ -127,44 +169,6 @@
         <a href="https://github.com/FieldmouseWorks/burrow#readme">README</a>.
       </p>
       <a class="repo-link" href="https://github.com/FieldmouseWorks/burrow">FieldmouseWorks/burrow <span aria-hidden="true">↗</span></a>
-    </article>
-
-    <article class="project">
-      <header>
-        <h3><a href="https://github.com/FieldmouseWorks/consolebook">Consolebook</a></h3>
-        <dl class="meta">
-          <div><dt>Language</dt><dd>Rust</dd></div>
-          <div><dt>License</dt><dd><a href="https://github.com/FieldmouseWorks/consolebook/blob/main/LICENSE">AGPL-3.0-only</a></dd></div>
-          <div><dt>Status</dt><dd class="status">pre-alpha, <a href="https://github.com/FieldmouseWorks/consolebook/releases/latest">v0.3.0</a></dd></div>
-        </dl>
-      </header>
-      <p>
-        Self-hosted training-record software for emergency communications
-        centers: versioned programs, Daily Observation Reports, weekly
-        summaries, task signoffs, and trainee histories, with agency-owned
-        data and portable records.
-      </p>
-      <p>
-        Implemented workflows include assignment-scoped access, immutable
-        finalized records, acknowledgments, amendments, retention policies and
-        holds, verifiable record exports, trainee packets, and a complete
-        installation export that carries everything except credentials.
-      </p>
-      <p>
-        Rust and Axum, SQLite, and an embedded SvelteKit interface:
-        <strong>one executable and one data directory per installation</strong>,
-        installed and upgraded with one command. Every upgrade that migrates
-        the database takes a validated backup first. A small center should be
-        able to operate its own system without a collection of external
-        services.
-      </p>
-      <p class="caution">
-        Pre-alpha: usable for development and evaluation only. Use invented
-        data, never production or personnel records. Confirmed disposition,
-        deterministic PDFs, and restore drills on real hosts remain on the
-        <a href="https://github.com/FieldmouseWorks/consolebook/blob/main/docs/roadmap.md">roadmap</a>.
-      </p>
-      <a class="repo-link" href="https://github.com/FieldmouseWorks/consolebook">FieldmouseWorks/consolebook <span aria-hidden="true">↗</span></a>
     </article>
 
     <p class="supporting">
