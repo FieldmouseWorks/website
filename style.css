@@ -289,7 +289,7 @@ img { display: block; max-width: 100%; height: auto; }
 @media (max-width: 40rem) {
   .masthead nav { gap: 1rem; }
   .masthead nav a { white-space: nowrap; }
-  .masthead nav a:nth-child(2) { display: none; }
+  .masthead nav .wide-only { display: none; }
   .brand span { font-size: 0.95rem; }
   .hero { grid-template-columns: 1fr; }
   .shaft { right: -10%; width: 40vw; }
