@@ -29,6 +29,7 @@
   </a>
   <nav aria-label="Primary">
     <a href="#projects">Projects</a>
+    <a href="#how">How it's built</a>
     <a href="#name">The name</a>
     <a href="https://github.com/FieldmouseWorks" rel="me">GitHub <span aria-hidden="true">↗</span></a>
   </nav>
@@ -176,6 +177,25 @@
       and emergency-communications software. For Peter's native game
       reconstruction, persistent-world games, and runtime research, visit his
       <a href="https://github.com/TusanHomichi">personal GitHub profile</a>.
+    </p>
+  </section>
+
+  <section class="how" id="how" aria-labelledby="how-title">
+    <h2 id="how-title" class="eyebrow">How the work gets done</h2>
+    <p>
+      AI agents write most of the code here, under Peter's direction. Every
+      pull request goes through the same loop: an AI reviewer reads the
+      change, a Claude Code agent fixes or answers each finding and failed
+      check, and a steward merges only the exact commit that was reviewed and
+      passed CI. Changes that can't be undone, such as secrets and database
+      migrations, wait for Peter.
+    </p>
+    <p>
+      The loop is tuned from measurements. Moving every step off a 15-minute
+      poll and onto GitHub events brought reviews to about 3 minutes after a
+      push, and a second reviewer was dropped after its findings and cost were
+      scored. The machinery is open source in
+      <a href="https://github.com/FieldmouseWorks/burrow">burrow</a>.
     </p>
   </section>
 
