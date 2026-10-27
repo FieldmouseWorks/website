@@ -8,3 +8,8 @@ on:
 jobs:
   check:
     uses: FieldmouseWorks/burrow/.github/workflows/flake-check.yml@9dd4bc5fc7716525b0f0148d7bc3311db0084803 # main
+    # What the shared workflow needs to attest its result.
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
