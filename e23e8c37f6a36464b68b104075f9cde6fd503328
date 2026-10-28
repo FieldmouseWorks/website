@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "49pxgep4wxy3bgv5hzthmpak1y",
+  "repo": {
+    "owner": "fieldmouseworks",
+    "name": "website"
+  },
+  "pr": 12,
+  "url": "https://github.com/fieldmouseworks/website/pull/12",
+  "summary": "index: add wend's CentOS 4 route",
+  "task": "https://claude.ai/code/project/chan_01Ad4f4oDXfFTCEzLHzMTD8q?thread=cmsg_01Ad4f4oDXfFTCEzLHzMTD8qGSsbJNVPM6mi8QFtgedrnv",
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01BkHcyEHC8NcrBJ1QXRTFnc"
+  },
+  "landing": {
+    "revision": "32f909c90f8d6d77a362feb52561052b59caf308052ad132037ffbcc2a3e6993",
+    "before": "21754e16965602bdb0dc492adc467b82f4f664ff",
+    "after": "e23e8c37f6a36464b68b104075f9cde6fd503328",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793153816023
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/actions/runs/40619222640/job/122588874699"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/pull/12#pullrequestreview-5676927143"
+    }
+  ]
+}
