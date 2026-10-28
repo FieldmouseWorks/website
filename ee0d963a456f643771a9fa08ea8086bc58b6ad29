@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "6w5nmavjjhv612zm3ryvv674bv",
+  "repo": {
+    "owner": "FieldmouseWorks",
+    "name": "website"
+  },
+  "pr": 5,
+  "url": "https://github.com/FieldmouseWorks/website/pull/5",
+  "summary": "agents: open PRs ready for review, never as drafts",
+  "task": "FieldmouseWorks/burrow#87",
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01A8jL6BSB2M5KUufXQefcf9"
+  },
+  "landing": {
+    "revision": "d4585bad141d2ee1769878ce52e2582d90aa24fb3b1d31f114d329acb1eb13e3",
+    "before": "f0a6f4dc8bc27a6608952018b63cd34d5e30c9ad",
+    "after": "ee0d963a456f643771a9fa08ea8086bc58b6ad29",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793141833092
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/actions/runs/40451261808/job/122014279269"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/pull/5#pullrequestreview-5662308990"
+    }
+  ]
+}

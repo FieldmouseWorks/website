@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "059axxysq04v55hs2f44cz9rvm",
+  "repo": {
+    "owner": "FieldmouseWorks",
+    "name": "website"
+  },
+  "pr": 11,
+  "url": "https://github.com/FieldmouseWorks/website/pull/11",
+  "summary": "ci: grant the shared gate what it needs to attest its result",
+  "task": "FieldmouseWorks/Conary#15",
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01BkHcyDYaKnE7mRRMdYCFVC"
+  },
+  "landing": {
+    "revision": "a50ba73b351f9328f1730b9b3c131f4a37032f6bb99a3f4a99bbd4494aa74c16",
+    "before": "e165a747885f4fca1efbcac4ad3bd91df8422832",
+    "after": "21754e16965602bdb0dc492adc467b82f4f664ff",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793141855031
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/actions/runs/40598116107/job/122519104764"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/pull/11#pullrequestreview-5675522155"
+    }
+  ]
+}

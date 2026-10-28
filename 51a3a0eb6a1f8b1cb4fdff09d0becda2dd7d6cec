@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "2pg32eefy1v7e1a49ay46xpxyf",
+  "repo": {
+    "owner": "FieldmouseWorks",
+    "name": "website"
+  },
+  "pr": 9,
+  "url": "https://github.com/FieldmouseWorks/website/pull/9",
+  "summary": "index: say how the work gets reviewed, fixed and merged",
+  "task": "https://claude.ai/code/project/chan_01Ad4f4oDXfFTCEzLHzMTD8q?thread=cmsg_01Ad4f4oDXfFTCEzLHzMTD8qWgmiWonkXVvdukNe15Sf6x",
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01KFK6W8tFFpd4562gFnXtgK"
+  },
+  "landing": {
+    "revision": "ac53ee8352c6ee84b9b284d77d206e365f8c7ea341d6ec7782b31fab374e99e4",
+    "before": "14c54772a110238d3f1d295319bbb80d0bfd4ad6",
+    "after": "51a3a0eb6a1f8b1cb4fdff09d0becda2dd7d6cec",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793141846718
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/actions/runs/40558462500/job/122380743502"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/pull/9#pullrequestreview-5672200303"
+    }
+  ]
+}

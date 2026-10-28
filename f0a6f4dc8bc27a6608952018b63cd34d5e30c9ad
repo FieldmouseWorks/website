@@ -1,0 +1,41 @@
+{
+  "conary": "note v1",
+  "change": "0p4q6cx1kdkm56h1m1698dsw4j",
+  "repo": {
+    "owner": "FieldmouseWorks",
+    "name": "website"
+  },
+  "pr": 4,
+  "url": "https://github.com/FieldmouseWorks/website/pull/4",
+  "summary": "index: put Consolebook first and point at its demo",
+  "task": null,
+  "author": {
+    "kind": "agent",
+    "login": "TusanHomichi",
+    "session": "https://claude.ai/code/session_01A8jL6BSB2M5KUufXQefcf9"
+  },
+  "landing": {
+    "revision": "490dc135fb7f77df18979640af8751dceb117022d58e6ccfb55ac25c69f580f1",
+    "before": "369ac9510a28b43ff1726d92b0851a7a2f57da81",
+    "after": "f0a6f4dc8bc27a6608952018b63cd34d5e30c9ad",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793141829938
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/actions/runs/40450992442/job/122013421228"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/pull/4#pullrequestreview-5662293626"
+    }
+  ]
+}
