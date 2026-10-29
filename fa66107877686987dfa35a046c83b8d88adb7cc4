@@ -1,0 +1,35 @@
+{
+  "conary": "note v1",
+  "change": "7vsp6zvhwmmvxhvrqbsf1k8dns",
+  "repo": {
+    "owner": "fieldmouseworks",
+    "name": "website"
+  },
+  "pr": 24,
+  "url": "https://github.com/fieldmouseworks/website/pull/24",
+  "summary": "chore(deps): update fieldmouseworks/burrow digest to ce26da5",
+  "task": null,
+  "author": {
+    "kind": "person",
+    "login": "TusanHomichi",
+    "session": null
+  },
+  "landing": {
+    "revision": "c8a4643135d6ca3deb27de2d6d3305a6ed040bcf6ae9884df9ae6e76c5050cc8",
+    "before": "d6b895d400bcd6659ae7eda839fbd5b3bbc2914b",
+    "after": "fa66107877686987dfa35a046c83b8d88adb7cc4",
+    "by": {
+      "kind": "status",
+      "login": "TusanHomichi"
+    },
+    "at": 1793243351492
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/actions/runs/40810166994/job/123238332715"
+    }
+  ]
+}
