@@ -7,7 +7,7 @@ on:
     branches: [main]
 jobs:
   check:
-    uses: FieldmouseWorks/burrow/.github/workflows/flake-check.yml@24e84552a6f66e7120386d0ac900957f2384e482 # main
+    uses: FieldmouseWorks/burrow/.github/workflows/flake-check.yml@509b3c2c84124a67b12e680a02a3bcc099aec824 # main
     # What the shared workflow needs to attest its result.
     permissions:
       contents: read
