@@ -1,0 +1,47 @@
+{
+  "conary": "note v1",
+  "change": "0v76s8rg9jx8780najd5ncepbq",
+  "repo": {
+    "owner": "fieldmouseworks",
+    "name": "website"
+  },
+  "pr": 51,
+  "url": "https://github.com/fieldmouseworks/website/pull/51",
+  "summary": "chore(deps): update fieldmouseworks/burrow digest to 4559461",
+  "task": null,
+  "author": {
+    "kind": "bot",
+    "login": "fieldmouseworks-workers[bot]",
+    "session": null
+  },
+  "landing": {
+    "revision": "9a385eaed57f163e127ed1a60bf96b67850a36eeede89c435f5c2621a786cd94",
+    "before": "a8805581425a7d7c0a4e0457cecf6151b8c1b879",
+    "after": "508a3734861796a813eef05f3f0fe1647e722ea6",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793348488988
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/actions/runs/41025120566/job/123961301889"
+    },
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/actions/runs/41025120566/job/123961301872"
+    },
+    {
+      "kind": "review",
+      "check": "codex",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/pull/51#pullrequestreview-5709743849"
+    }
+  ]
+}
