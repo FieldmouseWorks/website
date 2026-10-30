@@ -44,9 +44,10 @@ body, when there is one, says why.
 - `index.html`, `privacy.html` and `style.css` are the pages; `assets/` holds
   the mark, favicons and Open Graph image from the logo kit.
 - The Fieldmouse Works host (remi, `modules/web.nix` in FieldmouseWorks/remi)
-  publishes `main` every five minutes: it copies everything but `README.md`
-  and dotfiles, and nginx serves `/privacy` from `privacy.html`. A merge is a
-  deploy, and every tracked file outside those two exclusions is public.
+  publishes `main` within seconds of each push to it: it copies everything
+  but `README.md` and dotfiles, and nginx serves `/privacy` from
+  `privacy.html`. A merge is a deploy, and every tracked file outside those
+  two exclusions is public.
 - Pages other than `index.html` link root-relative (`/style.css`,
   `/#projects`), so they work from their extensionless URL.
 
