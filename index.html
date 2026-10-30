@@ -146,7 +146,7 @@
       <header>
         <h3><a href="https://github.com/FieldmouseWorks/burrow">burrow</a></h3>
         <dl class="meta">
-          <div><dt>Language</dt><dd>Nix, Shell</dd></div>
+          <div><dt>Language</dt><dd>Nix, Python, Rust, Shell</dd></div>
           <div><dt>License</dt><dd><a href="https://github.com/FieldmouseWorks/burrow/blob/main/LICENSE">MIT</a></dd></div>
           <div><dt>Status</dt><dd class="status">in daily use</dd></div>
         </dl>
@@ -199,9 +199,10 @@
         server.
       </p>
       <p class="caution">
-        Early development: recording and <code>why</code> work today. Undo,
-        always as a new change, is next; landing changes in place of burrow's
-        steward comes later. See the
+        Early development: recording and <code>why</code> work today. The
+        merge train, which tests every ready change together in one run, is
+        next, then undo, always as a new change; landing changes in place of
+        burrow's steward comes later. See the
         <a href="https://github.com/FieldmouseWorks/Conary/blob/main/docs/DESIGN.md#12-milestones">milestones</a>.
       </p>
       <a class="repo-link" href="https://github.com/FieldmouseWorks/Conary">FieldmouseWorks/Conary <span aria-hidden="true">↗</span></a>
@@ -222,8 +223,9 @@
       pull request goes through the same loop: an AI reviewer reads the
       change, a Claude Code agent fixes or answers each finding and failed
       check, and a steward merges only the exact commit that was reviewed and
-      passed CI. Changes that can't be undone, such as secrets and database
-      migrations, wait for Peter.
+      passed CI. A change to a one-way path, like secrets or a database
+      migration, gets judged first, and waits for Peter only if it can't be
+      undone or the call is his.
     </p>
     <p>
       The loop is tuned from measurements. Moving every step off a 15-minute
