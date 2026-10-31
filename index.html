@@ -129,8 +129,9 @@
       </p>
       <p>
         A static Rust client is in progress. It will fingerprint a machine,
-        pick a route, snapshot before each hop, and roll back if a check fails,
-        with no model and no network beyond the distribution's mirrors.
+        pick a route, snapshot before each hop, and roll back if a check fails, with no
+        model. Pinned to a proven run, it fetches the exact bytes that run
+        used, by sha256, and refuses anything that doesn't match.
       </p>
       <p class="caution">
         Early: CI proves each route's userland in a chroot; kernels,
