@@ -1,0 +1,47 @@
+{
+  "conary": "note v1",
+  "change": "26h79ajqrkf8eczabttsfp8h6t",
+  "repo": {
+    "owner": "fieldmouseworks",
+    "name": "website"
+  },
+  "pr": 80,
+  "url": "https://github.com/fieldmouseworks/website/pull/80",
+  "summary": "deps: lock file maintenance (nix)",
+  "task": null,
+  "author": {
+    "kind": "bot",
+    "login": "fieldmouseworks-workers[bot]",
+    "session": null
+  },
+  "landing": {
+    "revision": "40191b548f4004cc454ab8122cae198b33cc6fb0600e5557694b641fae5a47ed",
+    "before": "b5c7a7eaf725638675ec385c14ff31c16304d6b7",
+    "after": "fe0367c0efa4fd0c16c7ab0c464eb85c54e5f42b",
+    "by": {
+      "kind": "status",
+      "login": "fieldmouseworks-steward[bot]"
+    },
+    "at": 1793435995136
+  },
+  "evidence": [
+    {
+      "kind": "ci",
+      "check": "check / commits",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/actions/runs/41184270198/job/124487834719"
+    },
+    {
+      "kind": "ci",
+      "check": "renovate/stability-days",
+      "result": "pass",
+      "source": "https://docs.renovatebot.com/key-concepts/minimum-release-age/"
+    },
+    {
+      "kind": "ci",
+      "check": "check / check",
+      "result": "pass",
+      "source": "https://github.com/FieldmouseWorks/website/actions/runs/41184270198/job/124487834853"
+    }
+  ]
+}
