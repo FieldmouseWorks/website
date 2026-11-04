@@ -1,7 +1,9 @@
 {
   description = "fieldmouseworks.com, the Fieldmouse Works website";
 
-  inputs.burrow.url = "git+https://github.com/FieldmouseWorks/burrow";
+  # Pinned by commit, so Renovate moves it with the workflows' pins on burrow
+  # (burrow's templates/project/flake.nix).
+  inputs.burrow.url = "git+https://github.com/FieldmouseWorks/burrow?ref=main&rev=f7f7fcc3f876511e91e5ea1c9e399a65eb5f8f20";
 
   # `nix develop` for the tools, `nix flake check` for the gate (see burrow's
   # lib/project.nix). The site is static HTML and CSS, so the gate is the
