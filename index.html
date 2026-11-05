@@ -164,8 +164,8 @@
         It keeps the machine current unattended, with every update built,
         VM-tested, health-checked and reverted on failure, and new CVEs
         turned into agent jobs the same hour. A steward merges each pull
-        request once an AI reviewer finds nothing on its exact head and CI is
-        green. An always-on operator session
+        request once an AI reviewer finds nothing in its own change and CI is
+        green on its head. An always-on operator session
         you talk to from your phone hands project work to per-project
         sessions, or to a microVM per task with allowlisted egress.
       </p>
@@ -226,8 +226,8 @@
       AI agents write most of the code here, under Peter's direction. Every
       pull request goes through the same loop: an AI reviewer reads the
       change, a Claude Code agent fixes or answers each finding and failed
-      check, and a steward merges only the exact commit that was reviewed and
-      passed CI. A change to a one-way path, like secrets or a database
+      check, and a steward merges only the exact change that was reviewed,
+      once CI has passed on the commit it merges. A change to a one-way path, like secrets or a database
       migration, gets judged first, and waits for Peter only if it can't be
       undone or the call is his.
     </p>
