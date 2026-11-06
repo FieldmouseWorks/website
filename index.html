@@ -226,9 +226,9 @@
       pull request goes through the same loop: an AI reviewer reads the
       change, a Claude Code agent fixes or answers each finding and failed
       check, and a steward merges only the exact change that was reviewed,
-      once CI has passed on the commit it merges. A change to a one-way path, like secrets or a database
-      migration, gets judged first, and waits for Peter only if it can't be
-      undone or the call is his.
+      once CI has passed on the commit it merges. A change to a one-way path,
+      like secrets or CODEOWNERS, gets judged first, and waits for Peter only
+      if it can't be undone or the call is his.
     </p>
     <p>
       The loop is tuned from measurements. Moving every step off a 15-minute
