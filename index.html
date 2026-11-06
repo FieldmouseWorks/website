@@ -204,11 +204,13 @@
       <p class="caution">
         Early development: recording, <code>why</code> and undo work today.
         Undo reverts a landed change by its PR, a session's changes or
-        everything since a time, always as a new change. The merge train,
-        which tests ready changes together in one run (a change that needs
-        a person's yes runs alone), is in progress and has landed one
-        repository's PRs since 2026-10-30; landing
-        changes in place of burrow's steward comes later. See the
+        everything since a time, always as a new change. Conary also
+        decides each change's class (which ones need a review round, and
+        which a person) and runs the merge train, which tests ready changes
+        together in one run (a change that needs a person's yes runs alone)
+        and has landed one repository's PRs since 2026-10-30. burrow's
+        steward still asks for the reviews and says when a PR is settled;
+        Conary takes over its jobs one at a time. See the
         <a href="https://github.com/FieldmouseWorks/Conary/blob/main/docs/DESIGN.md#12-roadmap">roadmap</a>.
       </p>
       <a class="repo-link" href="https://github.com/FieldmouseWorks/Conary">FieldmouseWorks/Conary <span aria-hidden="true">↗</span></a>
