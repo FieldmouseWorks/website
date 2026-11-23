@@ -1,11 +1,15 @@
 # The gate is the flake: CI only runs `nix flake check`, through burrow's
 # shared workflow. Jobs the flake can't hold (browsers, VMs) go alongside.
+#
+# The repository lands through its merge train, which runs this on each
+# candidate it would land (a push to a conary/train/ branch: main with the PRs
+# in it on top), so the gate attests the tree that lands, not a PR's test merge.
 name: flake
 on:
   # A PR retargeted onto another branch runs from flake-retarget.yml.
   pull_request:
   push:
-    branches: [main]
+    branches: [main, "conary/train/**"]
 jobs:
   check:
     uses: FieldmouseWorks/burrow/.github/workflows/flake-check.yml@202d1c06990656145a30a290b8dd134f61006b4a # main
