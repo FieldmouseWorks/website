@@ -153,23 +153,25 @@
         </dl>
       </header>
       <p>
-        NixOS modules for a machine you run by talking to Claude. The coding
-        agent gets the whole machine with no permission prompts, because
-        nearly everything it can do undoes itself: a ZFS snapshot before
-        anything deletes files, and a dead man's switch that brings the old
-        system back unless a change is confirmed within ten minutes. The few
-        one-way doors, like wiping disks or flashing firmware, still ask.
+        NixOS modules for a machine you run with coding agents. Your agents get
+        the whole machine with no permission prompts, because nearly everything
+        they can do undoes itself: a ZFS snapshot before anything deletes files,
+        and a dead man's switch that brings the old system back unless a change
+        is confirmed within ten minutes. The few one-way doors, like wiping
+        disks or flashing firmware, still ask.
       </p>
       <p>
         It keeps the machine current unattended, with every update built,
         VM-tested, health-checked and reverted on failure, and new CVEs
-        turned into agent jobs the same hour. A steward merges each pull
-        request once an AI reviewer finds nothing in its own change and CI is
+        turned into agent jobs the same hour. A pipeline lands each pull
+        request once review finds nothing in its own change and CI is
         green on its head; a change the machine's policy classes as
         documentation alone, touching no one-way path, needs green CI alone.
-        An always-on operator session
-        you talk to from your phone hands project work to per-project
-        sessions, or to a microVM per task with allowlisted egress.
+        Engines plug in through Conary's plugin contract (Anthropic,
+        Antigravity, and a conformance example are in tree), with live per-role
+        routing across headless jobs and microVM sandboxes—moving every role,
+        including judging and PR review, to swappable plugins rather than one
+        provider.
       </p>
       <p class="caution">
         In daily use on one machine; options may still move. Read the
