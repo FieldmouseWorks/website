@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fieldmouse Works — Open tools for closed systems</title>
-<meta name="description" content="Fieldmouse Works builds open-source upgrade paths for old Linux machines, NixOS modules for machines run by AI coding agents, a ledger for the code agents write, and self-hosted software for emergency communications. Open tools for closed systems.">
+<meta name="description" content="Fieldmouse Works builds open-source NixOS modules for machines run with AI coding agents, a ledger for the code agents write, upgrade paths for old Linux machines, and self-hosted software for emergency communications. Open tools for closed systems.">
 <meta property="og:title" content="Fieldmouse Works">
-<meta property="og:description" content="Open-source upgrade paths for old Linux machines and self-hosted software for emergency communications. Open tools for closed systems.">
+<meta property="og:description" content="Open-source AI-agent infrastructure, upgrade paths for old Linux machines, and self-hosted software for emergency communications. Open tools for closed systems.">
 <meta property="og:url" content="https://fieldmouseworks.com/">
 <meta property="og:image" content="https://fieldmouseworks.com/assets/og-image.png">
 <meta property="og:type" content="website">
@@ -72,8 +72,8 @@
         </dl>
       </header>
       <p>
-        Written by a working 911 dispatcher. Self-hosted training records
-        for 911 centers: versioned programs, Daily Observation Reports,
+        Designed and built by a working 911 dispatcher. Self-hosted training
+        records for 911 centers: versioned programs, Daily Observation Reports,
         weekly summaries, task signoffs, and each trainee's complete file,
         with agency-owned data and portable records.
       </p>
@@ -153,23 +153,24 @@
         </dl>
       </header>
       <p>
-        NixOS modules for a machine you run by talking to Claude. The coding
-        agent gets the whole machine with no permission prompts, because
-        nearly everything it can do undoes itself: a ZFS snapshot before
-        anything deletes files, and a dead man's switch that brings the old
-        system back unless a change is confirmed within ten minutes. The few
-        one-way doors, like wiping disks or flashing firmware, still ask.
+        NixOS modules for a machine you run with coding agents. Agents get the
+        whole machine with no permission prompts, because nearly everything
+        they can do undoes itself: a ZFS snapshot before anything deletes
+        files, and a dead man's switch that brings the old system back unless a
+        change is confirmed within ten minutes. The few one-way doors, like
+        wiping disks or flashing firmware, still ask.
       </p>
       <p>
         It keeps the machine current unattended, with every update built,
         VM-tested, health-checked and reverted on failure, and new CVEs
-        turned into agent jobs the same hour. A steward merges each pull
-        request once an AI reviewer finds nothing in its own change and CI is
-        green on its head; a change the machine's policy classes as
+        turned into agent jobs the same hour. A review-and-merge pipeline lands
+        each pull request once an AI reviewer finds nothing in its own change
+        and CI is green on its head; a change the machine's policy classes as
         documentation alone, touching no one-way path, needs green CI alone.
-        An always-on operator session
-        you talk to from your phone hands project work to per-project
-        sessions, or to a microVM per task with allowlisted egress.
+        Drive the box from an interactive operator session, a tailnet
+        dashboard, or GitHub issues, handing work to queued project jobs or to
+        per-engine QEMU microVMs on ZFS clones with filtered egress proxies and
+        modular engine plugins.
       </p>
       <p class="caution">
         In daily use on one machine; options may still move. Read the
@@ -204,13 +205,11 @@
       <p class="caution">
         Early development: recording, <code>why</code> and undo work today.
         Undo reverts a landed change by its PR, a session's changes or
-        everything since a time, always as a new change. Conary also
-        decides each change's class (which ones need a review round, and
-        which a person) and runs the merge train, which tests ready changes
-        together in one run (a change that needs a person's yes runs alone)
-        and has landed one repository's PRs since 2026-10-30. burrow's
-        steward still asks for the reviews and says when a PR is settled;
-        Conary takes over its jobs one at a time. See the
+        everything since a time, always as a new change. Conary also decides
+        each change's class (<code>cn class</code> / <code>cn policy</code>),
+        runs the merge train (testing ready changes together in one gate run),
+        and shadows landing decisions alongside burrow's steward as it takes
+        over the steward's jobs one at a time. See the
         <a href="https://github.com/FieldmouseWorks/Conary/blob/main/docs/DESIGN.md#12-roadmap">roadmap</a>.
       </p>
       <a class="repo-link" href="https://github.com/FieldmouseWorks/Conary">FieldmouseWorks/Conary <span aria-hidden="true">↗</span></a>
@@ -227,13 +226,14 @@
   <section class="how" id="how" aria-labelledby="how-title">
     <h2 id="how-title" class="eyebrow">How the work gets done</h2>
     <p>
-      AI agents write most of the code here, under Peter's direction. Every
-      pull request goes through the same loop: an AI reviewer reads the
-      change, a Claude Code agent fixes or answers each finding and failed
-      check, and a steward merges only the exact change that was reviewed,
-      once CI has passed on the commit it merges. A change to a one-way path,
-      like secrets or CODEOWNERS, gets judged first, and waits for Peter only
-      if it can't be undone or the call is his.
+      AI coding agents write the code here, under Peter's direction; his work
+      is the architecture, specs, workspace rules, verification gates, and
+      undoable infrastructure. Every pull request goes through the same loop:
+      an AI reviewer reads the change, a coding agent fixes or answers each
+      finding and failed check, and the landing pipeline merges only the exact
+      change that was reviewed, once CI has passed on the commit it merges. A
+      change to a one-way path, like secrets or CODEOWNERS, gets judged first,
+      and waits for Peter only if it can't be undone or the call is his.
     </p>
     <p>
       The loop is tuned from measurements. Moving every step off a 15-minute
@@ -263,9 +263,9 @@
 <footer class="colophon">
   <p>
     Built by <a href="https://github.com/TusanHomichi">Peter Permenter</a>,
-    a systems and backend engineer focused on explicit state, reproducible
-    behavior, recovery, portability, and software that stays operable
-    without a permanent vendor relationship.
+    an AI-agent systems and infrastructure engineer focused on explicit state,
+    reproducible behavior, recovery, portability, and software that stays
+    operable without a permanent vendor relationship.
   </p>
   <p class="links">
     <a href="https://github.com/FieldmouseWorks">github.com/FieldmouseWorks</a>
